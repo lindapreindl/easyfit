@@ -1,0 +1,475 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+
+a {
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+}
+
+a:hover {
+    color: #C63130;
+}
+
+header a:last-child{
+    color: #C63130;
+}
+
+header a:last-child:hover{
+    color: #8a2222;
+}
+
+header {
+    margin: 0;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    border: 1px solid lightgray;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header{
+    margin: 0;
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    height: 10vh;
+}
+
+.textboxStart {
+    position: absolute;
+    top: 40vh;
+    right: 5vw;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+}
+
+h1 {
+    padding-right: 15px;
+    letter-spacing: 3px;
+    font-size: 50px;
+}
+
+.buttonRed {
+    border-radius: 4px;
+    background-color: rgba(245, 63, 63, 0.5);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    width: 210px;
+    transition: all 0.5s;
+    margin: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+.buttonRed span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonRed span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonRed:hover span {
+    padding-right: 25px;
+}
+
+.buttonRed:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.buttonRed:hover {
+    background-color: rgba(245, 63, 63, 1);
+}
+
+.textboxStart img {
+    height: 20vh;
+    padding-bottom: 40px;
+}
+
+.startpic_img {
+    margin-top: 12vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    background-color: black;
+    width: 100vw;
+}
+
+.werbung {
+    color: white;
+    padding: 15vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.werbung h2 {
+    font-size: 50px;
+}
+
+.werbungpic {
+    width: 40vw;
+}
+
+.werbungPunkt {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 2px solid rgb(146, 146, 146);
+}
+
+.werbungPunkt img {
+    height: 40px;
+}
+
+.pfeil {
+    height: 150px;
+}
+
+
+.ziele {
+    width: 80vw;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    color: white;
+    background-image: url('img/background_dark.jpg');
+    background-size: cover;
+    /*oder nur teil vom bild?*/
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /*border-style: double;*/
+}
+
+.textContainer {
+    text-align: center;
+}
+
+.ziele h3 {
+    /*text-shadow: -2px -2px 0 #ff0000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;*/
+    font-size: 50px;
+    margin-block-start: 5vh;
+    margin-block-end: 0;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.zielButton img {
+    width: 20vw;
+    padding: 0;
+}
+
+
+.zielButton {
+
+    letter-spacing: 2px;
+    font-size: 16px;
+    border-style: none;
+    border-bottom: 3px solid red;
+    padding-bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    text-align: center;
+    width: 20vw;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
+}
+
+.zielButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.zielButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.zielButton:hover span {
+    padding-right: 25px;
+}
+
+.zielButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.zielButton:hover {
+    background-color: rgb(0, 0, 0, 1);
+}
+
+.studio {
+    width: 100vw;
+    height: 50vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.studio img {
+    height: 40%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.studio img:hover {
+    height: 50%;
+}
+
+.preise {
+    width: 100vw;
+    color: white;
+    background-image: url(./img/background2black.jpg);
+    background-size: cover;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.preisLogo {
+    height: 80px;
+    padding-top: 40px;
+}
+
+.preise h3 {
+    font-size: 50px;
+    margin: 0;
+    padding-top: 40px;
+    letter-spacing: 2px;
+}
+
+.preisliste {
+    padding-top: 40px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mitgliedschaft {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 300px;
+    height: fit-content;
+    padding: 30px;
+    border: 1px solid white;
+    transition: all 0.5s;
+}
+
+.mitgliedschaft:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.preisePfeil {
+    height: 50px;
+}
+
+.mitgliedschaft h4 {
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 2px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+
+
+.inhalte img {
+    height: 20px;
+}
+
+.inhalt {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.preis{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.konditionen{
+    text-align: center;
+    padding-top: 30px;
+    width: 80vw;
+    font-size: 14px;
+    padding-bottom: 80px;
+}
+
+.tageskarte{
+    height: 30vh;
+    width: 100vw;
+    color: white;
+    background-color: #cc2626;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+
+.tageskarte h3{
+    font-size: 40px;
+    margin: 0;
+}
+
+.tageskarte h3:first-child{
+    color: black;
+    font-size: 50px;
+}
+
+.aktuelles{
+    padding-top: 20vh;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 15vh;
+    background-image: url(./img/background_dark_reverse.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#aktuelles{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 0;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    background-color: rgba(255, 255, 255, 0.1);
+    align-self: flex-end;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+#aktuelles img{
+    height: 100px;
+    padding: 0;
+}
+
+.aktuelles h3{
+    margin-top: 10vh;
+    font-size: 60px;
+    letter-spacing: 4px;
+    padding: 0;
+}
+
+.beitraege{
+    margin-top: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer{
+    height: 20vh;
+    width: 100vw;
+    background-color: rgb(15, 15, 15);
+    border-top: .5px solid white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+footer img{
+    height: 15vh;
+}
+
+.footer_href {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+
+.adresse{
+    height: 18vh;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    border-right: .5px solid white;
+    border-left: .5px solid white;
+}
