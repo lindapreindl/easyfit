@@ -52,6 +52,7 @@ header {
 
 header img {
     height: 10vh;
+    padding-left: 10px;
 }
 
 .textboxStart {
@@ -416,7 +417,7 @@ h1 {
     padding-top: 0;
     padding-right: 5vw;
     padding-left: 5vw;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
     align-self: flex-end;
     gap: 10px;
     border-radius: 5px;
