@@ -2,11 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(./img/plank.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    scroll-behavior: smooth;
-    object-fit: cover;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -42,7 +38,7 @@ header a:last-child:hover{
 
 header {
     margin: 0;
-    height: 12vh;
+    height: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -58,19 +54,32 @@ header {
 
 .header{
     margin: 0;
-    width: 700px;
+    width: 60vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 header img {
-    height: 10vh;
+    height: 80px;
     padding-left: 10px;
 }
 
+.body{
+    padding-top: 100px;
+    background-image: url(./img/plank.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    width: 100vw;
+    height: calc(100%-100px);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container{
-    margin-top: 20vh;
     background-color: rgba(0, 0, 0, 0.5);
     width: 60vw;
     display: flex;
@@ -89,3 +98,70 @@ header img {
     text-align: left;
 }
 
+@media(max-width: 1080px){
+
+    a{
+        font-size: 16px;
+
+    }
+
+    .header{
+        width: 70vw;
+    }
+}
+
+@media(max-width: 980px){
+
+    a{
+        font-size: 15px;
+    }
+
+    .header{
+        width: 80vw;
+    }
+ 
+}
+
+@media(max-width: 780px){
+
+    #linkToMitgliedschaft{
+        display: none;
+    }
+
+    #linkToAktuelles{
+        display: none;
+    }
+
+    .header{
+        justify-content: flex-end;
+        gap: 5%;
+        padding-right: 10px;
+    }
+ 
+}
+
+@media(max-width: 540px){
+
+    #linkToKontakt{
+        display: none;
+    }
+
+    #linkToProbetraining{
+        display: none;
+    }
+
+    .container p{
+        font-size: 14px;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+}
+
+
+@media(max-width: 340px){
+    #linkToNumber{
+        display: none;
+    }
+}
