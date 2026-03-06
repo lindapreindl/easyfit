@@ -1,3 +1,20 @@
+@keyframes smoothscroll1 {
+  from, to { scroll-behavior: smooth; }
+}
+
+@keyframes smoothscroll2 {
+  from, to { scroll-behavior: smooth; }
+}
+
+html {
+  animation: smoothscroll1 1s;
+}
+
+html:focus-within {
+  animation-name: smoothscroll2;
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -486,9 +503,56 @@ footer img{
     padding-top: 20vh;
 }
 
+@media(max-width: 1080px){
+
+    a{
+        font-size: 16px;
+
+    }
+
+    .header{
+        width: 70vw;
+    }
+}
+
+@media(max-width: 980px){
+
+    a{
+        font-size: 15px;
+    }
+
+    .header{
+        width: 80vw;
+    }
+ 
+}
+
+@media(max-width: 780px){
+
+    #linkToMitgliedschaft{
+        display: none;
+    }
+
+    #linkToAktuelles{
+        display: none;
+    }
+}
+
+@media(max-width: 540px){
+
+    #linkToKontakt{
+        display: none;
+    }
+
+    #linkToProbetraining{
+        display: none;
+    }
+}
 
 
-@media(max-width: 680px){
+@media(max-width: 340px){
+    #linkToNumber{
+        display: none;
+    }
 
-    
 }

@@ -93,7 +93,7 @@ p {
     overflow: hidden;
     width: 70vw;
     max-width: 100%;
-    height: 70vh;
+    height: 80vh;
     border: 1px solid white;
 }
 
@@ -110,7 +110,7 @@ h2 {
 .left-container {
     display: flex;
     justify-content: space-around;
-    height: 70vh;
+    height: 80vh;
     align-items: center;
     color: white;
     background-color: rgba(245, 63, 63, 0.5);
@@ -120,7 +120,7 @@ h2 {
 .right-container {
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    height: 80vh;
     background-color: none;
     justify-content: space-around;
     align-items: center;
@@ -142,6 +142,10 @@ h2 {
     width: 80%;
     text-align: center;
     line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 fieldset{
@@ -169,7 +173,7 @@ button {
     color: #FFFFFF;
     text-align: center;
     font-size: 18px;
-    padding: 20px;
+    padding: 15px 20px 15px 20px;
     transition: all 0.5s;
     margin: 5px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
@@ -202,4 +206,109 @@ button:hover span:after {
 
 button:hover {
     background-color: rgba(245, 63, 63, 1);
+}
+
+
+@media(max-width: 1080px){
+
+    a{
+        font-size: 16px;
+
+    }
+
+    .header{
+        width: 70vw;
+    }
+
+    .container{
+        width: 80vw;
+    }
+}
+
+@media(max-width: 980px){
+
+    a{
+        font-size: 15px;
+    }
+
+    .header{
+        width: 80vw;
+    }
+
+    .container{
+        width: 90vw;
+    }
+ 
+}
+
+@media(max-width: 780px){
+
+    #linkToMitgliedschaft{
+        display: none;
+    }
+
+    #linkToAktuelles{
+        display: none;
+    }
+}
+
+@media(max-width: 700px){
+
+    .form-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.left-container{
+    height: 30vh;
+    width: 90vw;
+}
+
+.left-inner-container h2{
+    font-size: 20px;
+    margin-bottom: 5%;
+    margin-block-end: 0;
+}
+
+.left-inner-container p{
+    font-size: 14px;
+}
+
+.left-inner-container{
+    height: 90%;
+}
+
+.right-container{
+    height: 50vh;
+    width: 90vw;
+}
+
+.right-inner-container{
+    width: 70vw;
+}
+
+button{
+    margin-bottom: 20px;
+}
+
+}
+
+@media(max-width: 540px){
+
+    #linkToKontakt{
+        display: none;
+    }
+
+    #linkToProbetraining{
+        display: none;
+    }
+}
+
+
+@media(max-width: 340px){
+    #linkToNumber{
+        display: none;
+    }
+
 }
