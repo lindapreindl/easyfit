@@ -66,14 +66,14 @@ header img {
 }
 
 .body{
-    padding-top: 100px;
+    margin-top: 100px;
     background-image: url(./img/plank.jpg);
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
+    background-attachment: fixed;
     width: 100vw;
-    height: calc(100%-100px);
-    box-sizing: border-box;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,6 +95,23 @@ header img {
 }
 
 .container p{
+    text-align: left;
+}
+
+.containerDatenschutz{
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 60vw;
+    border: 1px solid white;
+    padding: 20px;
+    height: 60vh;
+    overflow-y: scroll;
+    text-align: center;
+    margin-bottom: 10vh;
+    padding: 50px;
+}
+
+.containerDatenschutz p{
     text-align: left;
 }
 
@@ -154,6 +171,15 @@ header img {
         font-size: 14px;
     }
 
+    .containerDatenschutz p{
+        font-size: 14px;
+    }
+
+    .containerDatenschutz{
+        width: 80vw;
+        padding: 8px;
+    }
+
     h3{
         font-size: 25px;
     }
@@ -164,4 +190,9 @@ header img {
     #linkToNumber{
         display: none;
     }
+
+    .container{
+        padding: 8px;
+    }
+
 }
