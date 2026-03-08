@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" href="./img/icon.png">
 </head>
 
-<body>
+<body onload="load()">
 
     <header>
         <a href="#"><img src="./img/logo1.png" alt=""></a>
@@ -33,7 +33,7 @@
                 <div>
                     <a href="./probetraining.html"><button class="buttonRed"><span>PROBETRAINING</span></button></a>
                     <a href="./contact.html" target="blank"><button class="buttonRed"><span>KONTAKT</span></button></a>
-                    
+
                 </div>
             </div>
         </div>
@@ -68,19 +68,30 @@
             <img class="pfeil" src="./img/pfeil (1).png" alt="">
 
 
-            <div class="ziele">
-                <div class="buttonContainer">
-                    <button class="zielButton"> <img src="./img/muskelaufbau.jpg" alt="">
-                        <span>MUSKELAUFBAU</span></button>
-                    <button class="zielButton"> <img src="./img/abnehmen.jpg" alt=""> <span>ABNEHMEN</span></button>
-                    <button class="zielButton"> <img src="./img/gesund_fit.jpg" alt=""> <span>GESUND FIT</span></button>
+
+
+            <div>
+                <div id="zieleOverlay">
+                    <div id="contentOverlay"></div>
                 </div>
-                <div class="textContainer">
-                    <h3>WAS DAVON IST DEIN ZIEL?</h3>
-                    <p>Natürlich gibt es noch viele weitere Beweggründe.</p>
-                    <p>Erzähl uns davon und wir erstellen dir einen passenden Trainingsplan.</p>
-                    <a href="./probetraining.html"><button class="buttonRed"><span>PROBETRAINING</span></button></a>
-                    <a href="./contact.html" target="blank"><button class="buttonRed"><span>KONTAKT</span></button></a>
+                <div class="ziele">
+
+                    <div class="buttonContainer">
+                        <button class="zielButton" onclick="openInfo(muskelaufbau)"> <img src="./img/muskelaufbau.jpg"
+                                alt=""> <span>MUSKELAUFBAU</span></button>
+                        <button class="zielButton" onclick="openInfo(abnehmen)"> <img src="./img/abnehmen.jpg" alt="">
+                            <span>ABNEHMEN</span></button>
+                        <button class="zielButton" onclick="openInfo(gesund)"> <img src="./img/gesund_fit.jpg" alt="">
+                            <span>GESUND FIT</span></button>
+                    </div>
+                    <div class="textContainer">
+                        <h3>WAS DAVON IST DEIN ZIEL?</h3>
+                        <p>Natürlich gibt es noch viele weitere Beweggründe.</p>
+                        <p>Erzähl uns davon und wir erstellen dir einen passenden Trainingsplan.</p>
+                        <a href="./probetraining.html"><button class="buttonRed"><span>PROBETRAINING</span></button></a>
+                        <a href="./contact.html" target="blank"><button
+                                class="buttonRed"><span>KONTAKT</span></button></a>
+                    </div>
                 </div>
             </div>
 
@@ -131,7 +142,8 @@
                             </div>
 
                             <p class="preis">8,99€ *</p>
-                            <a href="./probetraining.html"><button class="buttonRed"><span>jetzt anmelden</span></button></a>
+                            <a href="./probetraining.html"><button class="buttonRed"><span>jetzt
+                                        anmelden</span></button></a>
                         </div>
                     </div>
 
@@ -169,7 +181,8 @@
                             </div>
 
                             <p class="preis">10,99€ *</p>
-                            <a href="./probetraining.html"><button class="buttonRed"><span>jetzt anmelden</span></button></a>
+                            <a href="./probetraining.html"><button class="buttonRed"><span>jetzt
+                                        anmelden</span></button></a>
                         </div>
                     </div>
 
@@ -207,8 +220,9 @@
                             </div>
 
                             <p class="preis">11,99€ *</p>
-                            <a href="./probetraining.html"><button class="buttonRed"><span>jetzt anmelden</span></button></a>
-                            
+                            <a href="./probetraining.html"><button class="buttonRed"><span>jetzt
+                                        anmelden</span></button></a>
+
                         </div>
 
                     </div>
@@ -337,7 +351,8 @@
                                     <a href="https://www.instagram.com/p/DUyFCZLjJUv/?utm_source=ig_embed&amp;utm_campaign=loading"
                                         style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
                                         target="_blank">Ein Beitrag geteilt von 🇦🇹EASYFIT REUTTE🇦🇹
-                                        (@easyfitreutte)</a></p>
+                                        (@easyfitreutte)</a>
+                                </p>
                             </div>
                         </blockquote>
                         <script async src="//www.instagram.com/embed.js"></script>
@@ -435,7 +450,8 @@
                                     <a href="https://www.instagram.com/p/DSpWop8DLTQ/?utm_source=ig_embed&amp;utm_campaign=loading"
                                         style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
                                         target="_blank">Ein Beitrag geteilt von 🇦🇹EASYFIT REUTTE🇦🇹
-                                        (@easyfitreutte)</a></p>
+                                        (@easyfitreutte)</a>
+                                </p>
                             </div>
                         </blockquote>
                         <script async src="//www.instagram.com/embed.js"></script>
@@ -533,7 +549,8 @@
                                     <a href="https://www.instagram.com/p/DRAuxk6DBN_/?utm_source=ig_embed&amp;utm_campaign=loading"
                                         style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
                                         target="_blank">Ein Beitrag geteilt von 🇦🇹EASYFIT REUTTE🇦🇹
-                                        (@easyfitreutte)</a></p>
+                                        (@easyfitreutte)</a>
+                                </p>
                             </div>
                         </blockquote>
                         <script async src="//www.instagram.com/embed.js"></script>
@@ -542,31 +559,32 @@
                 </div>
 
             </div>
+        </div>
 
-            <footer>
-                <img src="./img/logo1.png" alt="">
+        <footer>
+            <img src="./img/logo1.png" alt="">
 
-                <div class="adresse">
-                    <p>
-                        René Wagner<br><br>
-                        Easyfit Reutte GmbH<br>
-                        Bahnhofstraße 20<br>
-                        6600 Reutte <br><br>
-                        Alle Rechte vorbehalten.
-                    </p>
+            <div class="adresse">
+                <p>
+                    René Wagner<br><br>
+                    Easyfit Reutte GmbH<br>
+                    Bahnhofstraße 20<br>
+                    6600 Reutte <br><br>
+                    Alle Rechte vorbehalten.
+                </p>
+            </div>
+
+            <div>
+                <a href="./contact.html" target="blank"><button class="buttonRed"><span>KONTAKT</span></button></a>
+
+                <div class="footer_href">
+                    <a href="./impressum.html">Impressum</a>
+                    <p>|</p>
+                    <a href="./datenschutz.html">Datenschutz</a>
                 </div>
+            </div>
 
-                <div>
-                    <a href="./contact.html" target="blank"><button class="buttonRed"><span>KONTAKT</span></button></a>
-
-                    <div class="footer_href">
-                        <a href="./impressum.html">Impressum</a>
-                        <p>|</p>
-                        <a href="./datenschutz.html">Datenschutz</a>
-                    </div>
-                </div>
-
-            </footer>
+        </footer>
 
 </body>
 
