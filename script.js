@@ -1,5 +1,0 @@
-
-
-function openInfo(){
-  location.reload();
-}

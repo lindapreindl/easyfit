@@ -1,0 +1,227 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100vw;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+a {
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+}
+
+a:hover {
+    color: #C63130;
+}
+
+header a:last-child{
+    color: #C63130;
+}
+
+header a:last-child:hover{
+    color: #8a2222;
+}
+
+header {
+    margin: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    border: 1px solid lightgray;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header{
+    margin: 0;
+    width: 60vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    height: 80px;
+    padding-left: 10px;
+}
+
+.buttonRed {
+    border-radius: 4px;
+    background-color: rgba(245, 63, 63, 0.5);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    width: 230px;
+    transition: all 0.5s;
+    margin: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+.buttonRed span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonRed span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonRed:hover span {
+    padding-right: 25px;
+}
+
+.buttonRed:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.buttonRed:hover {
+    background-color: rgba(245, 63, 63, 1);
+}
+
+.background{
+    position: relative;
+    top: 100px;
+    background-image: url(./img/background2black.jpg);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+.container img:first-child{
+    width: 35vw;
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.headline img{
+    height: 30px;
+    width: 30px !important;
+}
+
+.headline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+@media(max-width: 1000px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20vh;
+        height: fit-content;
+    }
+
+
+}
+
+@media(max-width: 1080px){
+
+    a{
+        font-size: 16px;
+
+    }
+
+    .header{
+        width: 70vw;
+    }
+}
+
+@media(max-width: 980px){
+
+    a{
+        font-size: 15px;
+    }
+
+    .header{
+        width: 80vw;
+    }
+ 
+}
+
+@media(max-width: 780px){
+
+    #linkToMitgliedschaft{
+        display: none;
+    }
+
+    #linkToAktuelles{
+        display: none;
+    }
+
+    .header{
+        justify-content: flex-end;
+        gap: 5%;
+        padding-right: 10px;
+    }
+ 
+}
+
+@media(max-width: 540px){
+
+    #linkToKontakt{
+        display: none;
+    }
+
+    #linkToProbetraining{
+        display: none;
+    }
+}
+
+
+@media(max-width: 340px){
+    #linkToNumber{
+        display: none;
+    }
+
+}
