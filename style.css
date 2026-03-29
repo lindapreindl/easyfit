@@ -224,12 +224,13 @@ h1 {
 .ziele {
     width: 80vw;
     margin-top: 15vh;
-    margin-bottom: 5vh;
+    margin-bottom: 100px;
     color: white;
     background-image: url('img/background_dark.jpg');
     background-size: cover;
     /*oder nur teil vom bild?*/
-    height: 90vh;
+    height: fit-content;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
