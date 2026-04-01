@@ -228,7 +228,6 @@ h1 {
     color: white;
     background-image: url('img/background_dark.jpg');
     background-size: cover;
-    /*oder nur teil vom bild?*/
     height: fit-content;
     padding: 20px;
     display: flex;
@@ -501,6 +500,10 @@ h1 {
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+.beitraege img{ 
+    width: 320px;
 }
 
 footer {
