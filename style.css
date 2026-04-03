@@ -82,6 +82,20 @@ header img {
     padding-left: 10px;
 }
 
+.socials{
+    z-index: 999;
+    position: fixed;
+    bottom: 15vh;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.socials img{
+    width: 70px;
+}
+
 .startpic {
     background-image: url(./img/abs.jpg);
     width: 100%;
