@@ -96,6 +96,18 @@ header img {
     width: 70px;
 }
 
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+span.constant-tilt-shake {
+  animation: tilt-shaking 0.3s 10;
+}
+
 .startpic {
     background-image: url(./img/abs.jpg);
     width: 100%;
@@ -341,7 +353,7 @@ h1 {
 }
 
 .studio img {
-    height: 40%;
+    height: 50%;
     cursor: pointer;
     transition: all 0.5s;
 }
@@ -712,6 +724,16 @@ footer img {
 
     .werbungpic{
         width: 90vw;
+    }
+
+    
+    .socials{
+        bottom: 10px;
+        gap: 10px;
+    }
+
+    .socials img{
+        width: 50px;
     }
 }
 
