@@ -1,3 +1,26 @@
-# Redirect HTTPS to HTTP
-RewriteCond %{HTTP:X-Forwarded-Proto} =https
-RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^/index.php/preise [NC]
+RewriteRule ^(.*)$ https://easyfit-reutte.at/ [L,R=301]
+
+RewriteCond %{REQUEST_URI} ^/index.php/2-uncategorised/13-herzlich-willkommen-im-easyfit-reutte [NC]
+RewriteRule ^(.*)$ https://easyfit-reutte.at/ [L,R=301]
+
+RewriteCond %{REQUEST_URI} ^/index.php/service [NC]
+RewriteRule ^(.*)$ https://easyfit-reutte.at/ [L,R=301]
+
+RewriteCond %{REQUEST_URI} ^/index.php/studio [NC]
+RewriteRule ^(.*)$ https://easyfit-reutte.at/ [L,R=301]
+
+RewriteCond %{REQUEST_URI} ^/index.php/studio/bildergalerie [NC]
+RewriteRule ^(.*)$ https://easyfit-reutte.at/ [L,R=301]
+
+RewriteCond %{REQUEST_URI} ^/index.php/kontakt/anfahrt [NC]
+RewriteRule ^(.*)$ https://easyfit-reutte.at/ [L,R=301]
+
+RewriteCond %{REQUEST_URI} ^/index.php/partner [NC]
+RewriteRule ^(.*)$ https://easyfit-reutte.at/ [L,R=301]
+
+RewriteCond %{REQUEST_URI} ^/index.php/fitness/freihanteltraining [NC]
+RewriteRule ^(.*)$ https://easyfit-reutte.at/ [L,R=301]
+
